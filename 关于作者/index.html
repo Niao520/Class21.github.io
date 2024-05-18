@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于作者</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" type="text/css" href="../css/cursor.css">
+    <style>
+        * {
+            font-family: "Merriweather", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(255, 252, 245);
+        }
+
+        .shell{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .person{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 50px;
+        }
+
+        .box{
+            height: 500px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* 内置矩形inset（上右下左的边距round上右下左的圆角） */
+            clip-path: inset(0 0 0 0 round 0 0 520px 520px);
+        }
+        .circle{
+            border-radius: 50%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            transition: transform .3s;
+        }
+
+        .img{
+            position: relative;
+            width: 80%;
+            transform: translateY(80px);
+            transition: transform .3s;
+        }
+
+        .box:hover .img{
+            transform: translateY(26px) scale(1.2);
+        }
+
+        .box:hover .circle{
+            transform: rotate(20deg);
+        }
+
+        .wire {
+            background-color: rgb(200, 115, 123);
+            height: 2px;
+            width: 200px;
+            margin: 20px 0 20px 0;
+        }
+
+        .name{
+            color: #404245;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .birthday{
+            color: #6e6e6e;
+            font: 100 14px 'arial';
+            /* 斜体 */
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="person">
+            <div class="box">
+                <img src="./image/background.png" class="circle">
+                <img src="./image/1.png" class="img">
+            </div>
+            <div class="wire"></div>
+            <div class="name">罗立文</div>
+            <div class="birthday">我是超体火箭天花板 上赛季q区赛季末38星的无敌战神 淘汰分9000 淘汰榜榜一 极品 ID极品科比 连我的设备都是专门玩火箭的知道吗 因为我用的是爆改版 Vivo Y83 职业比赛专用机超清120 桢平板视野主播同款灵敏度我从S1就开始玩了</div>
+        </div>
+
+        <div class="person">
+            <div class="box">
+                <img src="./image/background.png" class="circle">
+                <img src="./image/02.png" class="img">
+            </div>
+            <div class="wire"></div>
+            <div class="name">Phone</div>
+            <div class="birthday">15107611083</div>
+        </div>
+
+        <div class="person">
+            <div class="box">
+                <img src="./image/background.png" class="circle">
+                <img src="./image/03.png" class="img">
+            </div>
+            <div class="wire"></div>
+            <div class="name">Email</div>
+            <div class="birthday">3428956460@qq.com</div>
+        </div>
+
+        <div class="person">
+            <div class="box">
+                <img src="./image/background.png" class="circle">
+                <img src="./image/04.png" class="img">
+            </div>
+            <div class="wire"></div>
+            <div class="name">关于为什么建这个网站</div>
+            <div class="birthday">无需多言    For my classmates</div>
+        </div>
+    </div>
+<script type="text/javascript" src="../js/cursor.js"></script>
+</body>
+
+</html>
